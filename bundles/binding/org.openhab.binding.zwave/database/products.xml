@@ -1385,6 +1385,15 @@
         </Product>
         <Product>
             <Reference>
+                <Type>6E02</Type>
+                <Id>0101</Id>
+            </Reference>
+            <Model>CT110</Model>
+            <Label lang="en">Z-Wave Thermostat</Label>
+            <ConfigFile>rtc/ct110.xml</ConfigFile>
+        </Product>
+        <Product>
+            <Reference>
                 <Type>5002</Type>
                 <Id>0100</Id>
             </Reference>
