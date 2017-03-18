@@ -73,6 +73,22 @@
             </Item>
         </Parameter>
         <Parameter>
+            <Index>4</Index>
+            <Type>list</Type>
+            <Default>1</Default>
+            <Size>1</Size>
+            <Label lang="en">C-Wire/Battery</Label>
+            <Help lang="en">1=C-Wire, 2=Battery</Help>
+            <Item>
+                <Value>1</Value>
+                <Label lang="en">C-wire</Label>
+            </Item>
+            <Item>
+                <Value>2</Value>
+                <Label lang="en">Battery</Label>
+            </Item>
+        </Parameter>
+        <Parameter>
             <Index>5</Index>
             <Type>list</Type>
             <Default>2</Default>
@@ -155,8 +171,8 @@
         <Parameter>
             <Index>8</Index>
             <Type>int</Type>
-            <Minimum>4</Minimum>
-            <Maximum>3084</Maximum>
+            <Minimum>0</Minimum>
+            <Maximum>65535</Maximum>
             <Default>4</Default>
             <Size>2</Size>
             <Label lang="en">Thermostat Diff Temperature</Label>
@@ -180,19 +196,13 @@
         </Parameter>
         <Parameter>
             <Index>10</Index>
-            <Type>list</Type>
-            <Default>1</Default>
-            <Size>1</Size>
-            <Label lang="en">Simple UI Mode Enable/Disable</Label>
-            <Help lang="en">If set to 0, Simple UI Mode is disabled, if set to 1, will enable the Simple UI Mode.</Help>
-            <Item>
-                <Value>0</Value>
-                <Label lang="en">Function is disabled.</Label>
-            </Item>
-            <Item>
-                <Value>1</Value>
-                <Label lang="en">Function is enabled.</Label>
-            </Item>
+            <Type>int</Type>
+            <Minimum>0</Minimum>
+            <Maximum>65535</Maximum>
+            <Default>0</Default>
+            <Size>2</Size>
+            <Label lang="en">Temperature Reporting Filter</Label>
+            <Help lang="en">Byte 1: 0 -124ºF (lower bound), Byte 2: 0-124ºF (upper bound)</Help>
         </Parameter>
         <Parameter>
             <Index>11</Index>
